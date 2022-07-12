@@ -9,5 +9,23 @@ form.addEventListener('submit', function(e){
 
     urlForm = urlForm + this.name.value
 
-    alert(urlForm)
+    urlForm = urlForm.toLocaleLowerCase()
+
+    let answer = document.getElementById("content")
+
+    let html = ''
+
+    fetch(urlForm)
+        .then(answer => answer.json())
+        .then(function (data){
+            console.log(data)
+            html = 'Nome:' + data.name + '<br>'
+            html = html + 'Type: ' + data.types[0].type.name
+            answer.innerHTML = html
+        })
+        .catch(function (err){
+            console.log(err)
+        })
 })
+
+function
