@@ -60,10 +60,22 @@ hr {
     cursor: pointer;
 }
 
-#imgPokemon img{
+#imgPokemon img {
     width: 120px;
     border: 1px solid #333;
     border-radius: 50%;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
     margin: 10px;
+}
+
+#content {
+    font-family: monospace;
+    padding: 10px;
+    background-color: #ffcc01;
+    border: 1px solid #c8a102;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    color: #333;
 }
