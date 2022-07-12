@@ -50,3 +50,12 @@ hr {
     border-radius:  5px;
     margin: 5px 0;
 }
+
+.group-form input[type=submit] {
+    background: #1b356e;
+    font-weight: 900;
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
